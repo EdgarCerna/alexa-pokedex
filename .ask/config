@@ -1,8 +1,32 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
-      "merge": {}
+      "skill_id": "amzn1.ask.skill.9f67d66c-1f0d-4f69-8521-151e90121285",
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "bd34004d3760b50d88ab8efe8c613e5c"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "1b4bc9847bd4954337ad99fa6a90970d"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:511333970035:function:ask-custom-pokedex-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-pokedex-default",
+            "handler": "index.handler",
+            "revisionId": "2a305011-78be-4287-8d64-20e8caec88e3",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
     }
   }
- }
+}
